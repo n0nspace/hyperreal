@@ -231,13 +231,13 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-size: calc(16px + 12px);
+  font-size: calc({text:font size}px + 10px); 
   padding: 25px 40px;
-  line-height: 100%;
+  line-height: 100%; 
 }
 
 h3 { /*quote*/
-  font-size: calc({text:font size} + 2px);
+  font-size: calc({text:font size}px + 5px); 
 }
 
 input#mobile_button {
@@ -701,12 +701,12 @@ article {
 }
 
 /*link*/
-.lh {
-  background: none;
-}
-
 .lh a {
   padding: 0 5px;
+  color: {color:accent text};
+}
+.lh.caption {
+  background: {color:accent};
 }
 
 /*chat*/
@@ -1472,6 +1472,7 @@ article {
               {block:Link}
               <div class="lh caption">
                 <h3><a title="{URL}" href="{URL}">
+                  <i class="fas fa-link"></i>
                   {Name}</a>
                 </h3>
               </div>
