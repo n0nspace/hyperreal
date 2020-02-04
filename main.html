@@ -616,11 +616,16 @@ article {
 
 .caption img {
   max-width: 100%;
+  height: auto;
 }
 
 .caption hr {
   border-style: solid; 
   color: {color:accent};
+}
+ 
+.caption em {
+  white-space: break-spaces !important;
 }
 
 .reblog_parent {
@@ -704,7 +709,7 @@ article {
  
 /*photoset*/
 iframe.photoset {
-  max-width: {select:post width}px;
+  width: 100%;
 }
 
 /*link*/
@@ -883,10 +888,9 @@ iframe.photoset {
 }
 
 .ptags {
-  max-width: {select:post width}px; 
+  max-width: 100%;
   margin: 5px 0; 
   line-height: 250%; 
-  word-wrap: keep-all;
 } 
 
 .ptags a {
@@ -897,6 +901,7 @@ iframe.photoset {
   padding: 10px 10px; 
   background: linear-gradient(to right bottom, {color:accent} 0%, {color:accent two} 100%); 
   font-weight: bold;
+  word-break: break-all;
 }
 
 .pdate {
